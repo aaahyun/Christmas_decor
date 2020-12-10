@@ -1,0 +1,102 @@
+body {
+  background-color: #ff7366;
+}
+.green-tree-box {
+  width: 340px;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 60px;
+}
+.green-tree-layer {
+  width: 170px;
+}
+
+.green-tree-box svg {
+  width: 170px;
+  height: 300px;
+}
+
+.green-tree-box:nth-child(2) {
+  transform: rotateY(60deg);
+}
+.green-tree-box:nth-child(3) {
+  transform: rotateY(120deg);
+}
+.green-tree-box:nth-child(4) {
+  transform: rotateY(180deg);
+}
+.green-tree-box:nth-child(5) {
+  transform: rotateY(240deg);
+}
+.green-tree-box:nth-child(6) {
+  transform: rotateY(300deg);
+}
+
+.big-tree:hover .green-tree-box:first-child {
+  animation: spin1 8s linear infinite;
+}
+.big-tree:hover .green-tree-box:nth-child(2) {
+  animation: spin2 8s linear infinite;
+}
+.big-tree:hover .green-tree-box:nth-child(3) {
+  animation: spin3 8s linear infinite;
+}
+.big-tree:hover .green-tree-box:nth-child(4) {
+  animation: spin4 8s linear infinite;
+}
+.big-tree:hover .green-tree-box:nth-child(5) {
+  animation: spin5 8s linear infinite;
+}
+.big-tree:hover .green-tree-box:nth-child(6) {
+  animation: spin6 8s linear infinite;
+}
+@keyframes spin1 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spin2 {
+  from {
+    transform: rotateY(60deg);
+  }
+  to {
+    transform: rotateY(420deg);
+  }
+}
+@keyframes spin3 {
+  from {
+    transform: rotateY(120deg);
+  }
+  to {
+    transform: rotateY(480deg);
+  }
+}
+@keyframes spin4 {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(540deg);
+  }
+}
+@keyframes spin5 {
+  from {
+    transform: rotateY(240deg);
+  }
+  to {
+    transform: rotateY(600deg);
+  }
+}
+@keyframes spin6 {
+  from {
+    transform: rotateY(300deg);
+  }
+  to {
+    transform: rotateY(660deg);
+  }
+}
